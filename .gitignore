@@ -1,0 +1,13 @@
+node_modules/
+**/bin/
+**/obj/
+**/evidencias*/
+**/qa-session.json
+**/*.key
+**/*.eml
+**/.env
+**/.env.*
+**/appsettings*.json
+**/qa-mail/
+**/qa-keys/
+**/private/

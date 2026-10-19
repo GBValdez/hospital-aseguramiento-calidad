@@ -1,0 +1,2 @@
+const {client,dbName}=require('./db.cjs');
+(async()=>{const c=client();await c.connect();const actual=(await c.query('select current_database() n')).rows[0].n;if(actual!==dbName||actual!=='hospital_qa_20261019_ayu')throw Error('Base no autorizada');await c.query('TRUNCATE TABLE "Appointments", "MedicineInventories", "MedicineInventoryMovements" RESTART IDENTITY CASCADE');console.log('Solo fixtures clínicos de QA reiniciados en '+actual);await c.end()})().catch(e=>{console.error(e.message);process.exitCode=1});

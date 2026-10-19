@@ -1,0 +1,26 @@
+{
+  "name": "hospital-qa-real",
+  "version": "1.1.0",
+  "private": true,
+  "scripts": {
+    "test": "node run-unit.cjs",
+    "test:live": "node live-api.cjs",
+    "test:ui:real": "node ui-real.cjs",
+    "test:load:real": "node load-real.cjs",
+    "test:supplement": "node supplement.cjs",
+    "db:reset:qa": "node reset-fixtures.cjs",
+    "db:prepare:load": "node prepare-load.cjs",
+    "db:cleanup:load": "node cleanup-load.cjs"
+  },
+  "devDependencies": {
+    "pg": "8.21.0",
+    "playwright": "1.62.1",
+    "typescript": "5.5.4",
+    "moment": "2.30.1",
+    "crypto-js": "4.2.0",
+    "rxjs": "7.8.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

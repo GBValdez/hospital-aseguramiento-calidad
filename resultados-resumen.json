@@ -1,0 +1,40 @@
+{
+  "author": "Gabriel Benjamin Valdez de León",
+  "student_id": "7590-22-11271",
+  "course": "Aseguramiento de Calidad de Software",
+  "teacher": "Carlos Fontana",
+  "evaluated_at": "2026-10-19",
+  "logic_static": {
+    "passed": 33,
+    "total": 33
+  },
+  "api_sql": {
+    "passed": 50,
+    "total": 50
+  },
+  "ui_per_browser": {
+    "passed": 8,
+    "total": 8,
+    "browsers": [
+      "Chrome",
+      "Edge"
+    ]
+  },
+  "load": {
+    "requests": 100,
+    "concurrency": 5,
+    "p95_ms": 2475.3217,
+    "error_rate": 0,
+    "state": "FALLIDA"
+  },
+  "backend_coverage": {
+    "line_rate": 0.5368176538908246,
+    "branch_rate": 0.4218533886583679
+  },
+  "catalogue": {
+    "passed": 36,
+    "partial": 24,
+    "not_executed": 20,
+    "failed": 2
+  }
+}
